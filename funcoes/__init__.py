@@ -1,6 +1,6 @@
-usuarios = []
-eventos = []
-inscricoes = []
+usuarios = {}
+eventos = {}
+inscricoes = {}
 opcoes_menu_inical = ['0', '1', '2']
 opcoes_menu_eventos = ['0', '3', '4', '5', '6', '7', '8', '9', '10']
 
@@ -59,7 +59,7 @@ def inscricao(nome_do_evento, usuario_nome, pagamento):
 
 
 def buscar_eventos(busca):
-    resultado = []
+    resultado = {}
     for evento in eventos:
         if busca in evento[0] or busca in evento[1] or busca in evento[2] or busca in evento[3]:
             resultado.append(evento)

@@ -7,7 +7,7 @@ while op != '0':
     print('[1] Cadastrar usuário')
     print('[2] Login')
     print('[0] Fechar programa')
-    op = input('Digite a opção desejada: ')
+    op = input('Digite a opção desejada: ').strip()
 
 
     while op not in opcoes_menu_inical:
